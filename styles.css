@@ -1,15 +1,7 @@
-@keyframes float {
-    0%, 100% { transform: rotate(var(--rotate)) translateY(0); }
-    50% { transform: rotate(calc(var(--rotate) + 2deg)) translateY(-10px); }
-  }
-  
-  .file {
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  .navbar-nav {
+.navbar-nav {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+  
   
