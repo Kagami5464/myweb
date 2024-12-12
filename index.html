@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheets" href="styles.css" type="text/css" />
 
 </head>
    
@@ -16,7 +17,7 @@
   
     <nav class="navbar navbar-expand-sm bg-black">
         <div class="container-fluid">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link text-white" href="index.html">首頁</a>
             </li>
@@ -33,7 +34,7 @@
 <!-- Carousel -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  <!-- Indicators/dots -->
+  <!-- Indicators/dots (輪播底部橫桿)-->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -41,30 +42,77 @@
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
   </div>
   
-  <!-- The slideshow/carousel -->
+  <!-- The slideshow/carousel (輪播圖片)-->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/images/1.PNG" alt="Loading..." class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="/images/2.JPG" alt="Loading..." class="d-block" style="width:100%">
+      <img src="/images/2.jpg" alt="Loading..." class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="/images/3.JPG" alt="Loading..." class="d-block" style="width:100%">
+      <img src=" " alt="Loading..." class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="/images/4.jpg" alt="Loading..." class="d-block" style="width:100%">
+      <img src=" " alt="Loading..." class="d-block" style="width:100%">
     </div>
   </div>
   
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <!-- Left and right controls/icons(輪播左右鍵) -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"> 
     <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
+<style>
+  body {
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* 防止水平滚動 */
+  }
+  .scroll-container {
+    position: relative;
+    height: 200vh; /* 模擬長頁面滾動*/
+  }
+  .file {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(var(--rotate));
+    z-index: var(--z-index);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  /* 每个文件随机定位 */
+  .file:nth-child(1) { top: 10%; left: 15%; --rotate: -10deg; --z-index: 1; }
+  .file:nth-child(2) { top: 25%; left: 40%; --rotate: 15deg; --z-index: 2; }
+  .file:nth-child(3) { top: 50%; left: 20%; --rotate: -5deg; --z-index: 3; }
+  .file:nth-child(4) { top: 70%; left: 60%; --rotate: 10deg; --z-index: 4; }
+  .file:nth-child(5) { top: 90%; left: 35%; --rotate: -15deg; --z-index: 5; }
+</style>
+</head>
+<body>
+  <div class="scroll-container">
+    <div class="file">文件 1</div>
+    <div class="file">文件 2</div>
+    <div class="file">文件 3</div>
+    <div class="file">文件 4</div>
+    <div class="file">文件 5</div>
+  </div>
+  
+  <!-- 引入 Bootstrap JS (可選) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<body>
      
       <div class="container-fluid mt-3">
         <h3> The Portfolio</h3>
