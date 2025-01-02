@@ -7,7 +7,7 @@
             toggleActions: "restart restart pause pause",//play, pause, resume, reverse, complete, restart, reset, or none.
             scrub: 1, //1 sec, or  srub:true start到end的時間
             //horizontal: true,
-            markers: true
+            markers: false
             },
             duration: 5//no use if scrub:1
         });
@@ -25,7 +25,7 @@
                 end: "bottom 100px",//"+=200"
                 toggleActions: "restart restart pause pause",//play, pause, resume, reverse, complete, restart, reset, or none.
                 scrub: 1,
-                markers: true
+                markers: false
             },
         });
     
@@ -37,6 +37,6 @@
             end: "bottom 100px",//"+=200"
             toggleActions: "restart restart pause pause",//play, pause, resume, reverse, complete, restart, reset, or none.
             scrub: 1,
-            markers: true
+            markers: false
             },
         });
