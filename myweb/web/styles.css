@@ -82,7 +82,7 @@ div img{
     margin: 0 auto; 
 }
 
-footer {
+footer p{
     position: fixed;
     bottom: 0;
     width: 100%;
