@@ -88,6 +88,7 @@ footer p{
     width: 100%;
     color: rgb(221, 221, 221); 
     text-align: center; 
+    margin: auto;
     padding: 10px; 
     box-sizing: border-box; 
   }
