@@ -91,3 +91,10 @@ footer p{
     padding: 10px;
     box-sizing: border-box; 
   }
+
+#pic2 img{
+    display: block;
+    width:auto;
+    height:40%;
+    align-items: center;
+}
