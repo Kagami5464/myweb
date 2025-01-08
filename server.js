@@ -32,3 +32,13 @@ server.get("/profolio",(req,res)=>[
         }
     })
 ])
+
+server.post("/contact_me",(req,res)=>{
+    ContactDB,insert(req.body);
+    res.redirect("/#contact");
+})
+
+
+server.listen(80, ()=>{
+    console.log("Server is running at port 80.");
+})
