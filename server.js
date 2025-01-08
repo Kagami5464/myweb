@@ -20,4 +20,15 @@ server.get("/services",(req,res)=>{
         {icon:"fa-shopping-cart",heading:"E-Commerce",text:"L"}
         {icon:"fa-laptop",heading:"Design",text:"L"}
     ]
-}
+})
+
+server.get("/profolio",(req,res)=>[
+    //DB
+    ProfolioDB.find({}).then(results=>{
+        if(results !=null){
+            res.send(results);        
+        }else{
+            res.send("Error!");
+        }
+    })
+])
