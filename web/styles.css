@@ -93,15 +93,15 @@ footer p{
   }
 
 #contactpic img{
+    position: relative;
     display: block;
     width:250px;
     height:auto;
     align-items: center;
 }
 
-.container {
-    padding-bottom: 100px;
-}
-.container h1{
-    color: rgb(221, 221, 221); 
+.workspic img{
+    position: relative;
+    width:500px;
+    height:auto;
 }
