@@ -92,9 +92,16 @@ footer p{
     box-sizing: border-box; 
   }
 
-#pic2 img{
+#contactpic img{
     display: block;
-    width:auto;
-    height:40%;
+    width:250px;
+    height:auto;
     align-items: center;
+}
+
+.container {
+    padding-bottom: 100px;
+}
+.container h1{
+    color: rgb(221, 221, 221); 
 }
