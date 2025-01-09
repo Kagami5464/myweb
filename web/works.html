@@ -33,12 +33,12 @@
       <div class="workspic">
         <div class="row">
           <h2>Works</h2>
-            
-      <!-- 使用 v-for 來動態生成所有圖片 -->
+
             <div class="col-md-4"
               v-for="(item, index) in todos" :key="index">
               <img :src="item.photo" :alt="item.text">
               <p>{{ item.text }}</p>
+              
             </div>
           </div>
         </div>
