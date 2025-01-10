@@ -29,7 +29,7 @@
             toggleActions: "restart restart pause pause",//play, pause, resume, reverse, complete, restart, reset, or none.
             scrub: 1, //1 sec, or  srub:true start到end的時間
             //horizontal: true,
-            markers: true
+            markers: false
         },
         duration: 0.5,//no use if scrub:1
         opacity:0,
