@@ -30,12 +30,12 @@
       </nav>
 
       <div id="app" >
-          <div id="workspic" class="profolioWorks-data">
+          <div id="workspic" class="col-md-4">
             <div class="row">
               <h2>Works</h2>
     
-                <div class="col-md-4 profolioWorks"
-                  v-for="(item, index) in Works">
+                <div class="profolioWorks-data"
+                  v-for="item in Works">
                   <img :src="item.photo" :alt="item.text">
                   <p>{{ item.text }}</p>
                   
@@ -46,38 +46,7 @@
         
       </div>
 
-<script>
-  createApp({
-    data(){
-        return{
-            Works:[
-                { text: "Shusta", photo: "images/5.png" },
-                { text: "Isagi", photo: "images/6.png" },
-                { text: "Ayru", photo: "images/7.jpeg" },
-                { text: "Mysta", photo: "images/8.PNG" },
-                { text: "とーる", photo: "images/9.png" },
-                { text: "Mysta", photo: "images/10.PNG" }
-            ]
-        };
-    },
-    mounted(){
-        fetch("/ptofoiloWorks-data")
-            .then((response)=>{
-                if(response.ok){
-                    throw new Error('HTTP error! status: ${response.status}');
-            }
-            return response.json();
-        })
-        .then((data)=>{
-            console.log("Received data: ", data); //檢查回傳的資料
-            this.WorksDB = data; //將資料傳給WoorksDB
-        })
-        .catch((error)=>{
-            console.error('Error:', error);
-        });
-    }
-}).mounted('.profolioWorks-data');
-</script>
+<script src="WorksVue.js"></script>
 
 </body>
  
