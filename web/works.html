@@ -29,13 +29,20 @@
         </div>
       </nav>
 
-      <div id="app">
-        <ul>
-          <li v-for="item in Works" class:"profolioWorks">
-            {{item.text}} <br>
-            <img :src="'images/'+item.photo">
-          </li>
-        </ul>
+      <div id="app" >
+          <div class="workspic">
+            <div class="row">
+              <h2>Works</h2>
+    
+                <div class="col-md-4 profolioWorks"
+                  v-for="(item, index) in Works">
+                  <img :src="item.photo" :alt="item.text">
+                  <p>{{ item.text }}</p>
+                  
+                </div>
+              </div>
+            </div>
+     
         
       </div>
 
