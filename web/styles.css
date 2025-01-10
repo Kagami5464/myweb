@@ -96,7 +96,7 @@ footer p{
     align-items: center;
 }
 
-.workspic img{
+#workspic img{
     position: relative;
     width:500px;
     height:auto;

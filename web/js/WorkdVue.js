@@ -1,10 +1,16 @@
-const { response } = require("express");
-const { create } = require("nedb-promises");
+const {createApp,ref}  = Vue;
 
 createApp({
     data(){
         return{
-            Works:[]
+            Works:[
+                { text: "Shusta", photo: "images/5.png" },
+                { text: "Isagi", photo: "images/6.png" },
+                { text: "Ayru", photo: "images/7.jpeg" },
+                { text: "Mysta", photo: "images/8.PNG" },
+                { text: "とーる", photo: "images/9.png" },
+                { text: "Mysta", photo: "images/10.PNG" }
+            ]
         };
     },
     mounted(){

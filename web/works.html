@@ -30,7 +30,7 @@
       </nav>
 
       <div id="app" >
-          <div class="workspic">
+          <div id="workspic" class="profolioWorks-data">
             <div class="row">
               <h2>Works</h2>
     
@@ -46,30 +46,9 @@
         
       </div>
 
+<script src="js/WorkdVue.js"></script>
+
 </body>
-
-<script>
-  const { createApp } = Vue
-
-  createApp({
-    setup() {
-      return {
-        Works:[
-          { text: "Shusta", photo: "images/5.png" },
-          { text: "Isagi", photo: "images/6.png" },
-          { text: "Ayru", photo: "images/7.jpeg" },
-          { text: "Mysta", photo: "images/8.PNG" },
-          { text: "とーる", photo: "images/9.png" },
-          { text: "Mysta", photo: "images/10.PNG" }
-        ]
-      }
-    },
-    
-  }).mount('#app')
-
-   
-</script>
-
  
 <footer>
   <p> | a0976919813@gmail.com | 0976-919813 | © 2024 by Seki.</p>
