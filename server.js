@@ -3,11 +3,6 @@ var server = express();
 
 server.use(express.static(__dirname + "/web"));
 
-server.listen(80, () => {
-    console.log("Server is running at port 80.");
-});
-
-
 var DB = require("nedb-promises");
 var profolioWorks = DB.create(__dirname+"/profolioWorks.db");
 
