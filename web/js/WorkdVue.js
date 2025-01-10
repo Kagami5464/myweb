@@ -4,7 +4,7 @@ const { create } = require("nedb-promises");
 createApp({
     data(){
         return{
-            WorksDB:[]
+            Works:[]
         };
     },
     mounted(){

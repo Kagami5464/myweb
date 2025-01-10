@@ -29,41 +29,39 @@
         </div>
       </nav>
 
-   <div id="app">
-      <div class="workspic">
-        <div class="row">
-          <h2>Works</h2>
-
-            <div class="col-md-4"
-              v-for="(item, index) in todos" :key="index">
-              <img :src="item.photo" :alt="item.text">
-              <p>{{ item.text }}</p>
-              
-            </div>
-          </div>
-        </div>
+      <div id="app">
+        <ul>
+          <li v-for="item in todos" class:"profolioWorks">
+            {{item.text}} <br>
+            <img :src="'images/'+item.photo">
+          </li>
+        </ul>
+        
       </div>
-      
-      <script>
-        const { createApp } = Vue;
-      
-        createApp({
-          data() {
-            return {
-              todos: [
-                { text: "Shusta", photo: "images/5.png" },
-                { text: "Isagi", photo: "images/6.png" },
-                { text: "Ayru", photo: "images/7.jpeg" },
-                { text: "Mysta", photo: "images/8.PNG" },
-                { text: "とーる", photo: "images/9.png" },
-                { text: "Mysta", photo: "images/10.PNG" }
-              ]
-            };
-          }
-        }).mount('#app');
-      </script>
-      
+
 </body>
+
+<script>
+  const { createApp, ref } = Vue
+
+  createApp({
+    setup() {
+      return {
+        Works: ref([
+          { text: "Shusta", photo: "images/5.png" },
+          { text: "Isagi", photo: "images/6.png" },
+          { text: "Ayru", photo: "images/7.jpeg" },
+          { text: "Mysta", photo: "images/8.PNG" },
+          { text: "とーる", photo: "images/9.png" },
+          { text: "Mysta", photo: "images/10.PNG" }
+        ])
+      }
+    },
+    
+  }).mount('#app')
+
+   
+</script>
 
  
 <footer>
